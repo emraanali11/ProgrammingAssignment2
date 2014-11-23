@@ -6,18 +6,18 @@
 ## It will set, get values of vector and also set,get value of mean.
 
 makeCacheMatrix <- function(x = matrix()) {
-    invx <- NULL
-    set <- function(y) {
-      x <<- y
-      invx <<- NULL
-    }
-    get <- function() x
-    setmean <- function(mean) m <<- mean
-    getmean <- function() m
-    list(set = set, get = get,
-         setmean = setmean,
-         getmean = getmean)
+  inverse <- NULL
+  set <- function(y) {
+    x <<- y
+    inverse <<- NULL
   }
+  get <- function() x
+  setmean <- function(mean) inverse <<- mean
+  getmean <- function() inverse
+  list(set = set, get = get,
+       setmean = setmean,
+       getmean = getmean)
+}
 
 
 ## Write a short comment describing this function
