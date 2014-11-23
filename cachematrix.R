@@ -3,7 +3,7 @@
 ## using caching to reduce the computation.
 
 ## makeCacheMatrix creates a matrix object, which will return a list
-## It will set, get values of vector and also set,get value of mean.
+## It will set, get values of vector and also set,get value of inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL
